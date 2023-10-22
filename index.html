@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="Ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>pts計算</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ファビコン設定 -->
+  <link rel="apple-touch-icon" href="icon.png">
+   <!--   -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <p>ご自身の現在のステージを選択👇</p>
+  <div id="pullDown">
+    <select id="js-select">
+      <option>ベーシック</option>
+      <option>ブロンズ</option>
+      <option>シルバー</option>
+      <option>ゴールド</option>
+      <option>プラチナ</option>
+      <option>ダイヤモンド</option>
+      </select>
+  </div>
+  <form id="js-form">
+    <textarea id="js-textarea" placeholder="ここにポイントを計算したい文章を入力"></textarea>
+  </form>
+  <button id="js-button">ポイント計算</button>
+
+  <div id="js-result">
+    <p id="js-customerPts">お客様消費ポイント：</p>
+    <p id="js-counselorPts">購入回数1回以上のお客様からの獲得ポイント：</p>
+    <p id="js-counselorPts2">未購入のお客様からの獲得ポイント：</p>
+  </div>
+
+  <p>指定されたptsを半角で入力👇</p>
+  <form id="js-ptsInput">
+    <input id="js-input" placeholder="指定pts（半角数字）">
+  </form>
+  <button id="js-button2">文字数計算</button>
+
+  <div id="js-result2">
+    <p id="js-textCount">文字数：</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
